@@ -17,12 +17,18 @@ pipeline {
 						'''	
 				
 					}
-                    stage('test1'){
-                        steps{
-                            sh 'echo "test1"'
-                        }
+            
+                        
                     }
 				}
+                stage('test1'){
+                    steps{
+                        sh '''
+                            echo "this is test1"
+                        '''
+
+                    }
+                }
 			} 
 		}
 		stage('Deploy'){
